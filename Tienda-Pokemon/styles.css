@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+  }
+  
+  header {
+    background: #ffa256;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #683c22;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #683c22;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .catalogo {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .catalogo article {
+    background: rgb(255, 237, 230);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .catalogo img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  form {
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+  }
+  
+  button {
+    background: #e9882e;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #c9792e;
+  }
+  
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  nav button {
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: #683c22;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 1em;
+  }
+  .header-container {
+    position: relative;
+    background: #ffa256;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el logo */
+  }
+
+  /* Logo centrado */
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  /* Botón hamburguesa - posición a la izquierda */
+  .menu-toggle {
+    position: absolute;
+    left: 20px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #683c22;
+    cursor: pointer;
+    display: block;
+  }
+
+  /* Menú oculto por defecto */
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #ffa256;
+    flex-direction: column;
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+    text-align: center;
+  }
+
+  .nav-menu a,
+  .nav-menu button.cerrar-sesion {
+    display: block;
+    padding: 10px 0;
+    color: #683c22;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .nav-menu a:hover,
+  .nav-menu button.cerrar-sesion:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
