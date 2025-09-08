@@ -163,3 +163,12 @@ body {
   .nav-menu.active {
     display: flex;
   }
+
+  
+  .promo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    gap: 20px;               
+    text-align: center;       
+}
