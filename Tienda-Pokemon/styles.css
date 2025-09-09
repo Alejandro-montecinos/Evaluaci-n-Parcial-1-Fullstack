@@ -1,27 +1,32 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f5f5f5;
+    background: #938b9e;
+    background-image: url('img/fondo.jpg');
+        
+      min-height: 100vh; /* Ocupa toda la pantalla */
+      display: grid;
+      grid-template-rows: auto 1fr auto;
   }
   
   header {
-    background: #ffa256;
-    padding: 1rem;
-    text-align: center;
+    background-image: url('img/var.png');
+    height: 80px;       /* agranda la franja */
+    margin: 0; 
   }
 
   h1 {
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
-    color: #683c22;
+    color: #342c47;
   }
   
   nav a {
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
-    color: #683c22;
+    color: #342c47;
   }
   
   main {
@@ -66,7 +71,7 @@ body {
   }
   
   button {
-    background: #e9882e;
+    background: #8b79b3;
     color: white;
     border: none;
     padding: 10px;
@@ -74,30 +79,37 @@ body {
     border-radius: 5px;
   }
   
+
   button:hover {
-    background: #c9792e;
+    background: #9c86cf;
+    background-image: url('img/var2.png');
   }
   
-  footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-  }
+
+ footer {
+  margin-bottom: 0%;
+  bottom: 1;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
 
   nav button {
     background: none;
     border: none;
     font-weight: bold;
-    color: #683c22;
+    color: #463b5e;
     cursor: pointer;
     margin: 0 10px;
     font-size: 1em;
   }
   .header-container {
     position: relative;
-    background: #ffa256;
+    background-image: url('img/var.png');
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -107,8 +119,9 @@ body {
   /* Logo centrado */
   .logo {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 180%;                   /* centro vertical */
+    left: 50%;                  /* centro horizontal */
+    transform: translate(-50%, -50%); /* corrige ambas direcciones */
   }
 
   .logo img {
@@ -117,14 +130,16 @@ body {
 
   /* Botón hamburguesa - posición a la izquierda */
   .menu-toggle {
-    position: absolute;
-    left: 20px;
-    font-size: 28px;
-    background: none;
-    border: none;
-    color: #683c22;
-    cursor: pointer;
-    display: block;
+  position: absolute;
+  top: 160%;               /* lo llevamos al centro vertical */
+  left: 20px;
+  transform: translateY(-50%); /* lo centramos bien */
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #564679;
+  cursor: pointer;
+  display: block;
   }
 
   /* Menú oculto por defecto */
@@ -134,7 +149,7 @@ body {
     top: 70px;
     left: 0;
     right: 0;
-    background: #ffa256;
+    background: #8b79b3;
     flex-direction: column;
     padding: 10px 0;
     border-radius: 0 0 8px 8px;
@@ -147,7 +162,7 @@ body {
   .nav-menu button.cerrar-sesion {
     display: block;
     padding: 10px 0;
-    color: #683c22;
+    color: #342c47;
     font-weight: bold;
     text-decoration: none;
     border: none;
@@ -162,4 +177,15 @@ body {
 
   .nav-menu.active {
     display: flex;
+    color: #8874b8;
+    opacity: 1;
   }
+
+  
+  .promo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    gap: 20px;               
+    text-align: center;       
+}
