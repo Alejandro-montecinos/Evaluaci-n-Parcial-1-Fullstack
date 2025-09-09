@@ -3,6 +3,10 @@ body {
     margin: 0;
     background: #938b9e;
     background-image: url('img/fondo.jpg');
+        
+      min-height: 100vh; /* Ocupa toda la pantalla */
+      display: grid;
+      grid-template-rows: auto 1fr auto;
   }
   
   header {
@@ -83,8 +87,8 @@ body {
   
 
  footer {
-  position: fixed;
-  bottom: 0;
+  margin-bottom: 0%;
+  bottom: 1;
   left: 0;
   width: 100%;
   background: #222;
